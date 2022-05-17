@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar&display=swap');
+
+body{
+  background-color: #314141;
+  margin: 0px;
+  font-family: 'Akshar', sans-serif;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 4fr;
+  
+}
+
+.sidebar{
+  background-color: #8DAA91;
+  margin: 0px;
+  padding: 20px;
+  grid-area: 1 / 1 / 3 / 2;
+}
+
+.sidebar>div>div{
+  display:flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.sidebar>div{
+  padding-bottom: 30px; 
+}
+
+.header{
+  background-color: #2f3737;
+  grid-area: 1 / 2 / 2 / 3;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  max-height: 200px;
+  padding: 20px;
+}
+
+.header .searchbar{
+
+}
+
+.header .profile{
+  display: flex;
+}
+
+.header p{
+  margin: 5px;
+}
+
+.header .home{
+  display: flex;
+}
+
+.header .actions{
+
+}
+
+img.profile-pic{
+  height: 50px;
+  border-radius: 50%;
+}
+
+.cards{
+  background-color: #424c4c;
+  grid-area: 2 / 2/ 3 / 3;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.cards .projects {
+  grid-area: 1/1/2/2;
+}
+
+.cards .projects .project-cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.cards .others{
+  grid-area: 1/2/2/3;
+  display: grid;
+}
+
+.cards .card{
+  background-color: #2f3737;
+  border-left: 5px;
+  border-left-color: #F98948;
+  border-left-style: solid;
+  border-radius: 5px;
+  padding: 5px;
+}
