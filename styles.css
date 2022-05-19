@@ -53,6 +53,7 @@ body{
 .header .actions {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
 
 .header .actions button{
@@ -94,6 +95,7 @@ img.profile-pic{
   grid-template-columns: 2fr 1fr;
   gap: 20px;
   padding: 20px;
+  align-items: start;
 }
 
 .cards .projects {
@@ -102,7 +104,8 @@ img.profile-pic{
 
 .cards .projects .project-cards{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* repeat(auto-fit, minmax(300px, 1fr)); */
   gap: 20px;
 }
 
